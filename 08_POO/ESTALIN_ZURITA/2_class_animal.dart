@@ -1,24 +1,40 @@
-void main () {
+void main() {
+  final perro = Animal(
+    nombre: "Pancho",
+    edad: 4,
+  );
 
-final perro = Animal (
+  final gato = Animal(
+    nombre: "Paco",
+    edad: 3,
+  );
 
-  nombre: "Pancho",
-  edad: 4,
-  
-);
+  /// Botón en la aplicación que ejecuta el método caminar del gato
+  gato.caminar();
 
-final gato = Animal (
+  perro.caminar();
 
-  nombre: "Paco"
-  edad: 3,
-)
 }
 
-/// Clase Animal
+/// Clase animal
 
+class Animal {
+  // Atributos
+  String nombre;
+  int edad;
 
-class Animal { 
+  // Constructor
+  Animal({
+    required this.nombre,
+    required this.edad,
+  });
 
+  // métodos
+  void comer() {
+    print("$nombre está comiendo");
+  }
 
-
+  void caminar() {
+    print("$nombre de $edad está caminando");
+  }
 }
