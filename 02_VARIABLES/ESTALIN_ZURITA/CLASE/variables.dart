@@ -1,20 +1,36 @@
-void main ()[
-var nombre = "Estalin";
+// Esta es una variable global
+String global = "Este es un valor global";
 
-late String edad;
+void main() {
+  // var
+  var nombre = "Richar";
 
-edad = "37";
+  // late
+  // inicializarlo mas tarde
+  late String edad;
 
-print (edad);
+  edad = "12";
 
-String apellido = "Zurita";
+  print(edad);
 
-const velocidadSonid = "250";
-final diaSemana = "lunes";
-
-// const se utiliza cuando se contruye al inicio, ej: render
-// final cuando está la app en uso
-
+  // Recomendable que siempre definas la variable con el tipo de dato
+  String apellido = "Cangui";
 
 
-]
+  /// Const y Final 
+  /// 
+  /// Const -> se asigna su espacio de memoria al momento de compilar - 2s 
+  /// 
+  /// Final -> se asigna su espacio de memoria al momento de ejecutar - 2s
+  /// 
+  
+  const velocidadSonido = "250";
+
+  final diaSemana = "Lunes";
+
+
+
+
+
+
+}
