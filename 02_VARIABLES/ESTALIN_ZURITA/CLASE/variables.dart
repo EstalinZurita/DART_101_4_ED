@@ -13,6 +13,6 @@ final diaSemana = "lunes";
 // const se utiliza cuando se contruye al inicio, ej: render
 // final cuando está la app en uso
 
-print (edad);
+print ("edad");
 
 ]
