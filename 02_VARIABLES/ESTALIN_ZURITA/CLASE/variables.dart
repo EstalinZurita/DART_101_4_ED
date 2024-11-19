@@ -5,6 +5,8 @@ late String edad;
 
 edad = "37";
 
+print (edad);
+
 String apellido = "Zurita";
 
 const velocidadSonid = "250";
@@ -13,6 +15,6 @@ final diaSemana = "lunes";
 // const se utiliza cuando se contruye al inicio, ej: render
 // final cuando está la app en uso
 
-print ("edad");
+
 
 ]
